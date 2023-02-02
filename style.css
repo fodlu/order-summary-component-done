@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+  background: url(pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  background-color: white;
+}
+
+.container .hero {
+  width: 100%;
+}
+
+.container .content {
+  /* padding: 30px; */
+  text-align: center;
+}
+
+.container .content h1 {
+  font-size: 20px;
+  color: hsl(223, 47%, 23%);
+  margin-top: 25px;
+  font-weight: 900;
+}
+
+.container .content p {
+  color: hsl(224, 23%, 55%);
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 70%;
+  font-weight: 700;
+}
+
+.container .content .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  background-color: hsl(225, 100%, 97%);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.container .content .price .left {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .content .price .left h2 {
+  color: hsl(223, 47%, 23%);
+}
+
+.container .content .price .left h2,
+.container .content .price .left span,
+.container .content .price .right a {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container .content .price .left span {
+  color: hsl(224, 23%, 55%);
+}
+
+.container .content .btn {
+  font-size: 13px;
+  font-weight: 900;
+  width: 80%;
+  height: 40px;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 4px hsla(245, 77%, 64%, 0.493);
+  margin-top: 20px;
+}
+
+.container .content .btn:hover {
+  background-color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.container .content .cancel {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.container .content .cancel a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.container .content .cancel a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.container .content .price .right a:hover {
+  color: hsl(224, 23%, 55%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url(pattern-background-mobile);
+  }
+
+  .container {
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+  }
+
+  .container .hero {
+    width: 100%;
+    height: 200px;
+  }
+
+  .container .content h1 {
+    font-size: 25px;
+  }
+
+  .container .content p {
+    font-size: 14.5px;
+    width: 90%;
+    line-height: 25px;
+  }
+
+  .container .content .price {
+    margin-top: 30px;
+  }
+
+  .container .content .price .left {
+    width: 60%;
+  }
+
+  .container .content .btn {
+    height: 50px;
+    margin-top: 30px;
+  }
+}
